@@ -12,8 +12,7 @@
     <nav>
         <div class="one">
           <h1>W-Starry Restaurant</h1>
-          <!-- <p>HEALTHY FOODS FOR HEALTHY BODY</p> -->
-        </div>
+         </div>
         
         <ion-icon class="menu" name="menu-outline"></ion-icon>
           <div class="left__listing">
@@ -37,13 +36,13 @@
    <form action="#" method="get" onsubmit="sendMessage">
     <h1>Make Reservation</h1>
     
-    <input class="name" id="name" type="text" placeholder="name" onkeyup="setMessageLink() clearNameError()" ><br>
+    <input class="name" id="name" type="text" placeholder="name" onkeyup="setMessageLink()" onkeyup="clearNameError()" ><br>
     <span id="nameErrorMessage"></span><br>
     
-    <input class="twin" type="tel" id="phone" placeholder="phone-number" name="phone" onkeyup="setMessageLink() clearPhoneError()"> <br>
+    <input class="twin" type="tel" id="phone" placeholder="phone-number" name="phone" onkeyup="setMessageLink()" onkeyup="clearPhoneError()"> <br>
     <span id="phoneErrorMessage"></span><br>
     
-    <input class="twin twins" type="email" name="email" placeholder="e-mail" id="email" onkeyup="setMessageLink() clearEmailError()"><br>
+    <input class="twin twins" type="email" name="email" placeholder="e-mail" id="email" onkeyup="setMessageLink()" onkeyup="clearEmailError()"><br>
     <span id="emailErrorMessage"></span><br>
     
     <div class="dandt">
@@ -70,27 +69,6 @@
 
    <marquee behavior="" direction="">We can't wait for you to dine with us.......We're opened everyday of the week from 11am-11pm......</marquee>
    <script>
-    // function sendMessage(e) {
-    //   e.preventDefault();
-    //   let name = document.getElementById('name').value;
-    // let phone = document.getElementById('phone').value;
-    // let date = document.getElementById('date').value;
-    //   let email = document.getElementById('email').value;
-    //   let person = document.getElementById('person').value;
-    //   let time = document.getElementById('time').value;
-
-    //   let message = "";
-    //   message += "Name: " + name + "<br>";
-    //   message += "Phone: " + phone + "<br>";
-    //   message += "Email: " + email + "<br>";
-    //   message += "Date: " + date + "<br>";
-    //   message += "Person: " + person + "<br>";
-    //   message += "Time: " + time + "<br>";
-
-    //   let messageLink = "https://wa.me/+2348105571552?text=" + message;
-    //   window.location.replace(messageLink);
-    // }
-
     function setMessageLink() {
       let name = document.getElementById('name').value;
       let phone = document.getElementById('phone').value;

@@ -62,8 +62,6 @@ const button = document.querySelector(".sub");
 button.addEventListener("click", (e) => {
     e.preventDefault()
     
-
-
 // VALIDATION
 if (inpTag.value === "") {
     document.getElementById('nameErrorMessage').innerHTML = "Enter Your Name";
@@ -79,33 +77,40 @@ if (inpTag.value === "") {
     // document.getElementById('timeErrorMessage').innerHTML = "pick a time"
   } else {
     button.innerHTML = "Submited";
-    // resultTag.innerHTML = `You are welcome ${inpTag.value}, Thank you for Choosing to Dine with us`;
-    // takeEmail.innerHTML = `You will be sent a confirmation message to ${inpTag3.value}`;
-    // takenumber.innerHTML = `Would you like to be sent notifications on this Number ${inpTag3.value} Yes or No?`;
-    // formCont.classList.add("hide");
   }
 });
 
+
+// Get reference to input elements and error message spans
+const nameInput = document.getElementById("name");
+const phoneInput = document.getElementById("phone");
+const emailInput = document.getElementById("email");
+const nameErrorMessage = document.getElementById("nameErrorMessage");
+const phoneErrorMessage = document.getElementById("phoneErrorMessage");
+const emailErrorMessage = document.getElementById("emailErrorMessage");
+
+// Add event listeners to clear error messages on keyup
+nameInput.addEventListener("keyup", clearNameError);
+phoneInput.addEventListener("keyup", clearPhoneError);
+emailInput.addEventListener("keyup", clearEmailError);
+
+// Function to clear name error message
 function clearNameError() {
-  document.getElementById('nameErrorMessage').innerHTML = "";
+  if (nameInput.value !== "") {
+    nameErrorMessage.innerHTML = "";
+  }
 }
 
+// Function to clear phone number error message
 function clearPhoneError() {
-  document.getElementById('phoneErrorMessage').innerHTML = "";
+  if (phoneInput.value !== "") {
+    phoneErrorMessage.innerHTML = "";
+  }
 }
 
+// Function to clear email error message
 function clearEmailError() {
-  document.getElementById('emailErrorMessage').innerHTML = "";
+  if (emailInput.value !== "") {
+    emailErrorMessage.innerHTML = "";
+  }
 }
-
-// function clearDateError() {
-//   document.getElementById('dateErrorMessage').innerHTML = "";
-// }
-
-// function clearTimeError() {
-//   document.getElementById('timeErrorMessage').innerHTML = "";
-// }
-
-// function clearPersonError() {
-//   document.getElementById('timeErrorMessage').innerHTML = "";
-// }
