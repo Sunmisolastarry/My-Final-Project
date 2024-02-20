@@ -51,12 +51,12 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 // ============ Form Validaion ==========
-const inpTag = document.querySelector(".name");
-const inpTag2 = document.querySelector(".phone");
-const inpTag3 = document.querySelector(".twin");
-const date = document.querySelector(".date")
-const time = document.querySelector(".time")
-const dropdown = document.querySelector(".dropdown");
+const inpTag = document.getElementById("name");
+const inpTag2 = document.getElementById("phone");
+const inpTag3 = document.getElementById("email");
+const date = document.getElementById("date")
+const time = document.getElementById("time")
+const dropdown = document.getElementById("person");
 const button = document.querySelector(".sub");
 
 button.addEventListener("click", (e) => {
@@ -72,11 +72,13 @@ if (inpTag.value === "") {
   } else if (inpTag3.value === "") {
     document.getElementById('emailErrorMessage').innerHTML = "Enter Your E-mail";
   } else if (date.value === "") {
-    document.getElementById('dateErrorMessage').innerHTML = "choose a date" 
+    alert("Choose a date")
+    // document.getElementById('dateErrorMessage').innerHTML = "choose a date" 
   }else if (time.value === "") {
-    document.getElementById('timeErrorMessage').innerHTML = "pick a time"
+    alert("pick a time")
+    // document.getElementById('timeErrorMessage').innerHTML = "pick a time"
   } else {
-    button.innerHTML = "Submited";
+    // button.innerHTML = "Submited";
     // resultTag.innerHTML = `You are welcome ${inpTag.value}, Thank you for Choosing to Dine with us`;
     // takeEmail.innerHTML = `You will be sent a confirmation message to ${inpTag3.value}`;
     // takenumber.innerHTML = `Would you like to be sent notifications on this Number ${inpTag3.value} Yes or No?`;

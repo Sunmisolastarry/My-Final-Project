@@ -36,18 +36,26 @@
 
    <form action="#" method="get" onsubmit="sendMessage">
     <h1>Make Reservation</h1>
+    
     <input class="name" id="name" type="text" placeholder="name" onkeyup="setMessageLink()"><br>
-    <span id="nameErrorMessage"></span>
-    <input class="twin" type="tel" id="phone" placeholder="phone-number" name="phone" onkeyup="setMessageLink()">
-    <span id="phoneErrorMessage"></span>
-    <input class="twin twins" type="email" name="email" placeholder="e-mail" id="email" onkeyup="setMessageLink()"><br><br>
-    <span id="emailErrorMessage"></span>
+    <span id="nameErrorMessage"></span><br>
+    
+    <input class="twin" type="tel" id="phone" placeholder="phone-number" name="phone" onkeyup="setMessageLink()"> <br>
+    <span id="phoneErrorMessage"></span><br>
+    
+    <input class="twin twins" type="email" name="email" placeholder="e-mail" id="email" onkeyup="setMessageLink()"><br>
+    <span id="emailErrorMessage"></span><br>
+    
+    <div class="dandt">
     <label class="ldate" for="date">Date</label>
-    <input class="date" type="date" name="date" id="date" placeholder="12 December 2023" onchange="setMessageLink()">
-    <span id="dateErrorMessage"></span>
-    <label class="ltime" for="time">Time</label>
+    <input class="date" type="date" name="date" id="date" placeholder="12 December 2023" onchange="setMessageLink()"><br>
+    <span id="dateErrorMessage"></span><br>
+    
+    <label class="ltime" for="time">Time</label><br>
     <input class="time" name="time" id="time" type="time" onchange="setMessageLink()">
-    <span id="timeErrorMessage"></span>
+    <span id="timeErrorMessage"></span><br>
+    </div>
+    
     <label class="person" for="person">Person</label>
     <select class="dropdown" id="person" name="person" onchange="setMessageLink()">
         <option value="1">1</option>
