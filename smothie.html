@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smoothie</title>
+    <link rel="stylesheet" href="./style.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="one">
+            <h1>W-Starry Restaurant</h1>
+            <!-- <p>HEALTHY FOODS FOR HEALTHY BODY</p> -->
+          </div>
+          
+          <ion-icon class="menu" name="menu-outline"></ion-icon>
+          <div class="left__listing">
+            <ion-icon class="close" name="close-outline"></ion-icon>
+            
+            <ul class="nav__list">
+              <li class="active"><a href="./home.html">Home</a></li>
+              <li><a href="./contact.html">Contact</a></li>
+              <li><a href="./menu.html">Menu</a></li>
+              
+            </ul>
+            
+            
+            <div class="btn">
+              <a href="./cart.html"><ion-icon name="cart" class="icon-cart"></ion-icon><span id="cart-counter">0</span></a>
+              <button><a href="./reserve.html">Book A Table</a></button>
+            </div>
+          </div>
+    </nav>
+
+     <!-- BUTTON -->
+     <div class="btnall">
+        <button><a href="./menu.html">Main-dish</a></button>
+        <button><a href="./protein.html">Protein</a></button>
+        <button><a href="./soup.html">Soup & Swallow</a></button>
+        <button><a href="./softdrink.html">Soft Drinks</a></button>
+        <button><a href="./wine.html">Wine & Spirits</a></button>
+        <button class="sb"><a href="./smothie.html">Smoothie</a></button>
+    </div>
+
+    <div class="Smoothie">
+        <div class="scroll-contain">
+            <div class="the-scroll">
+                
+                <div class="common">
+                    <img src="./images/apple.jpg" alt="">
+                    <p>Apple Smoothie</p>
+                    <b>#3000</b>
+                    <button id="cart1"  class="addToCartBtn">Add to Cart</button><br>
+                    <button class="del">Delete</button>
+                </div>
+                <div class="common">
+                    <img src="./images/kale.jpg" alt="  ">
+                    <p>Kale Apple Smoothie</p>
+                    <b>#3500</b> 
+                    <button id="cart2" class="addToCartBtn">Add to Cart</button><br>
+                    <button class="del">Delete</button>
+                </div>
+                <div class="common">
+                    <img src="./images/p&b.jpg" alt="">
+                    <p>Pineapple and Banana Smoothie</p>
+                    <b>#3000</b>
+                    <button id="cart3" class="addToCartBtn">Add to Cart</button><br>
+                    <button class="del">Delete</button> 
+                </div>
+                <div class="common">
+                    <img src="./images/c&a.jpg" alt="">
+                    <p>Cinnamon and Apple Smoothie</p>
+                    <b>#3000</b> 
+                    <button id="cart4" class="addToCartBtn">Add to Cart</button><br>
+                    <button class="del">Delete</button> 
+                </div>
+                <div class="common">
+                    <img src="./images/berry.jpeg" alt="">
+                    <p>Mixed Berry Smoothie</p>
+                    <b>#3500</b> 
+                    <button id="cart5" class="addToCartBtn">Add to Cart</button><br>
+                    <button class="del">Delete</button> 
+                </div>
+                <div class="common">
+                    <img src="./images/orange.png" alt="">
+                    <p>Orange Smoothie</p>
+                    <b>#3200</b> 
+                    <button id="cart6" class="addToCartBtn">Add to Cart</button><br>
+                    <button class="del">Delete</button> 
+                </div>
+                <div class="common">
+                    <img src="./images/cucumber.png" alt="">
+                    <p>Cucumber Water-Melon Smoothie</p>
+                    <b>#3000</b> 
+                    <button id="cart7" class="addToCartBtn">Add to Cart</button><br>
+                    <button class="del">Delete</button> 
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <script src="./all.js"></script>
+</body>
+</html>

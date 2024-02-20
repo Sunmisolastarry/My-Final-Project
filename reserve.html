@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation</title>
+    <link rel="stylesheet" href="./style.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body class="re">
+    <nav>
+        <div class="one">
+          <h1>W-Starry Restaurant</h1>
+          <!-- <p>HEALTHY FOODS FOR HEALTHY BODY</p> -->
+        </div>
+        
+        <ion-icon class="menu" name="menu-outline"></ion-icon>
+          <div class="left__listing">
+            <ion-icon class="close" name="close-outline"></ion-icon>
+            
+            <ul class="nav__list">
+              <li><a href="./home.html">Home</a></li>
+              <li><a href="./contact.html">Contact</a></li>
+              <li><a href="./menu.html">Menu</a></li>
+              
+            </ul>
+            
+            
+            <div class="btn">
+              <a href="./cart.html"><ion-icon name="cart" class="icon-cart"></ion-icon><span id="cart-counter">0</span></a>
+              <button><a href="./reserve.html">Book A Table</a></button>
+            </div>
+          </div>
+        </nav>
+
+   <form action="#" method="get" onsubmit="sendMessage">
+    <h1>Make Reservation</h1>
+    <input class="name" id="name" type="text" placeholder="name" onkeyup="setMessageLink()"><br>
+    <input class="twin" type="tel" id="phone" placeholder="phone-number" name="phone" onkeyup="setMessageLink()">
+    <input class="twin twins" type="email" name="email" placeholder="e-mail" id="email" onkeyup="setMessageLink()"><br><br>
+    <label class="ldate" for="date">Date</label>
+    <input class="date" type="date" name="date" id="date" placeholder="12 December 2023" onchange="setMessageLink()">
+    <label class="ltime" for="time">Time</label>
+    <input class="time" name="time" id="time" type="time" onchange="setMessageLink()">
+    <label class="person" for="person">Person</label>
+    <select class="dropdown" id="person" name="person" onchange="setMessageLink()">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+      </select>
+      <div class="sub">
+        <a id="whatsapp_link" href="" type="submit">Submit</button>
+       </div>
+   </form>
+   <script>
+    // function sendMessage(e) {
+    //   e.preventDefault();
+    //   let name = document.getElementById('name').value;
+    // let phone = document.getElementById('phone').value;
+    // let date = document.getElementById('date').value;
+    //   let email = document.getElementById('email').value;
+    //   let person = document.getElementById('person').value;
+    //   let time = document.getElementById('time').value;
+
+    //   let message = "";
+    //   message += "Name: " + name + "<br>";
+    //   message += "Phone: " + phone + "<br>";
+    //   message += "Email: " + email + "<br>";
+    //   message += "Date: " + date + "<br>";
+    //   message += "Person: " + person + "<br>";
+    //   message += "Time: " + time + "<br>";
+
+    //   let messageLink = "https://wa.me/+2348105571552?text=" + message;
+    //   window.location.replace(messageLink);
+    // }
+
+    function setMessageLink() {
+      let name = document.getElementById('name').value;
+      let phone = document.getElementById('phone').value;
+      let date = document.getElementById('date').value;
+      let email = document.getElementById('email').value;
+      let person = document.getElementById('person').value;
+      let time = document.getElementById('time').value;
+
+      let message = "";
+      message += "Name: " + name + "\n";
+      message += "Phone: " + phone + "\n";
+      message += "Email: " + email + "\n";
+      message += "Date: " + date + "\n ";
+      message += "Person: " + person + "\n";
+      message += "Time: " + time + "\n";
+
+      let messageLink = "https://wa.me/+2348104041508?text=" + message;
+      document.getElementById('whatsapp_link').href = messageLink;
+    }
+   </script>
+</body>
+</html>

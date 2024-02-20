@@ -1,0 +1,170 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.nav{
+    margin: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    position: static;
+}
+.hw h1{
+    font-size: 2.5rem;
+    margin-top: 30px;
+    background-color: white;
+    color: rgb(255, 111, 0);
+}
+.mid ol li a{
+    text-decoration: none;
+    color: black;
+}
+.mid ol{
+    list-style: none;
+    font-size: 2rem;
+    font-weight: bold;
+    display: flex;
+    gap: 30px;
+    margin: 30px 0;
+    color: whitesmoke;
+    cursor: pointer;
+}
+/* ICON */
+.icon-cart{
+    font-size: 40px;
+    color: rgb(255, 111, 0);
+}
+.icon-cart:hover{
+    background-color: rgb(255, 111, 0);
+    color: white;
+}
+
+.btn button{
+    background-color: white;
+    width: 200px;
+    height: 55px;
+    border-radius: 10px;
+    border: none;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 30px 0;
+}
+.btn button a{
+    text-decoration: none;
+    color: rgb(255, 111, 0);
+}
+.btn button:hover{
+    background-color: black;
+    transition: 1s;
+}
+/* ======== MAIN ========= */
+#cart{
+    margin: 40px 110px;    
+}
+.addToCartBtn{
+    display: none;
+}
+.common{
+    margin-top: 30px;
+}
+
+.cart-item {
+    margin-bottom: 90px;
+}
+
+.cart-item p{
+    margin-left: 250px;
+    margin-top: -180px;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.cart-item b{
+    margin-left: 250px;
+    margin-top: -190px;
+    margin-bottom: 280px;
+    font-size: 1.5rem;
+    font-weight: bold; 
+}
+.cart-item .del{
+    display: initial;
+    margin-left: 250px;
+    margin-top: 10px;
+}
+img{
+    width: 220px;
+    height: 200px;
+    border-radius: 6px;
+}
+#clear-cart-btn{
+    background-color: teal;
+    color: white;
+    justify-content: center;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    cursor: pointer;
+    position: fixed;
+    right: 270px;
+    top: 490px;    
+    box-shadow: rgba(0, 128, 128, 0.546) 2px 4px 8px;
+}
+#clear-cart-btn:hover{
+    background-color: rgba(0, 128, 128, 0.687);
+    font-size: 1.5rem;
+}
+
+.total{
+    position: fixed;
+    right: 120px;
+    top: 210px;
+    background-color: rgba(240, 237, 237, 0.379);
+    box-shadow: 2px 2px 5px rgba(96, 87, 87, 0.148);
+    border: 1px grey;
+    border-radius: 10px;
+    width: 450px;
+    height: 250px;
+}
+.tot{
+    margin: 20px 20px;
+}
+.total .tot h1{
+    font-size: 1.5rem;
+    margin-left: -1px;
+    word-spacing: 1px;
+}
+.total .tot h2{
+    font-size: 1.5rem;
+    margin-left: -1px;
+    margin: 28px 0;
+}
+.totalprice{
+    position: absolute;
+    right: 20px;
+    top: 70px;
+    font-size: 1.9rem;
+    font-weight: bolder;
+}
+.tot p{
+    font-size: 1.2rem;
+    color: grey;
+}
+.tot button{
+    width: 405px;
+    height: 50px;
+    background-color: teal;
+    color: white;
+    font-size: 1.4rem;
+    margin: 30px 0;
+    border-radius: 10px;
+    box-shadow: rgba(0, 128, 128, 0.546) 2px 4px 8px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+.tot button:hover{
+    font-size: 1.6rem;
+    opacity: 80%;
+}
