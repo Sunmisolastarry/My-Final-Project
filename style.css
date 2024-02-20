@@ -415,16 +415,24 @@ label{
     padding: 10px;
     color: rgb(255, 111, 0);
 }
-.sub a{
+.sub {
     background-color: aliceblue;
     padding: 4px 20px;
+    width: 160px;
     font-size: 2rem;
     border-radius: 10px;
     border: none;
     font-weight: bold;
     text-decoration: none;
-    margin: 0 250px;
+    margin-top: 50px;
+    margin-left: 240px;
     color: rgb(255, 111, 0);
+}
+marquee{
+    font-size: 2rem;
+    margin-top: 60px;
+    color: white;
+    font-weight: bold;
 }
 
 /* SMOOTHIE */

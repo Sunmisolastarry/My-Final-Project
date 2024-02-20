@@ -39,7 +39,9 @@
         <h1>CART SUMMARY</h1>
         <h2>Subtotal</h2> <span class="totalprice"></span>
         <p>See you in the next 30minutes</p>
-        <button>CHECKOUT <span class="totalprice"></span></button>
+        <a id="whatsapp_link" href=""><button>CHECKOUT <span class="totalprice"></span></button></a>
+        
+        
       </div>
     </div>
     
@@ -47,9 +49,21 @@
     <div id="cart"></div>
     
     <button id="clear-cart-btn">Clear Cart</button>
+
+
+<script>
+  function setMessageLink() {
+      let name = document.getElementsByClassName('totalprice').value;
+      
+
+      let message = "";
+      message += "Total-price: " + name + "\n";
+
+      let messageLink = "https://wa.me/+2348105571552?text=" + message;
+      document.getElementById('whatsapp_link').href = messageLink;
+  }
+</script>
 </body>
-
-
 <script src="./cart.js"></script>
 <script src="./all.js"></script>
 </html>
