@@ -49,3 +49,57 @@ document.addEventListener("DOMContentLoaded", function() {
         localStorage.setItem('cartCounter', cartCounter);
     }
 });
+
+// ============ Form Validaion ==========
+const inpTag = document.querySelector(".name");
+const inpTag2 = document.querySelector(".phone");
+const inpTag3 = document.querySelector(".twin");
+const date = document.querySelector(".date")
+const time = document.querySelector(".time")
+const dropdown = document.querySelector(".dropdown");
+const button = document.querySelector(".sub");
+
+button.addEventListener("click", (e) => {
+    e.preventDefault()
+    
+
+
+// VALIDATION
+if (inpTag.value === "") {
+    document.getElementById('nameErrorMessage').innerHTML = "Enter Your Name";
+  } else if (inpTag2.value === "") {
+    document.getElementById('phoneErrorMessage').innerHTML = "Enter Your Phone Number";
+  } else if (inpTag3.value === "") {
+    document.getElementById('emailErrorMessage').innerHTML = "Enter Your E-mail";
+  } else if (date.value === "") {
+    document.getElementById('dateErrorMessage').innerHTML = "choose a date" 
+  }else if (time.value === "") {
+    document.getElementById('timeErrorMessage').innerHTML = "pick a time"
+  } else {
+    button.innerHTML = "Submited";
+    // resultTag.innerHTML = `You are welcome ${inpTag.value}, Thank you for Choosing to Dine with us`;
+    // takeEmail.innerHTML = `You will be sent a confirmation message to ${inpTag3.value}`;
+    // takenumber.innerHTML = `Would you like to be sent notifications on this Number ${inpTag3.value} Yes or No?`;
+    // formCont.classList.add("hide");
+  }
+});
+
+function clearNameError() {
+  document.getElementById('nameErrorMessage').innerHTML = "";
+}
+
+function clearEmailError() {
+  document.getElementById('emailErrorMessage').innerHTML = "";
+}
+
+function clearPhoneError() {
+  document.getElementById('phoneErrorMessage').innerHTML = "";
+}
+
+function clearPasswordError() {
+  document.getElementById('passwordErrorMessage').innerHTML = "";
+}
+
+function clearPasswordTwoError() {
+  document.getElementById('passErrorMessage').innerHTML = "";
+}
