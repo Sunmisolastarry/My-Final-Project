@@ -641,7 +641,7 @@ footer .bottom__footer{
 }
 /* ======== Contact ======= */
 .consec{
-    margin: 30px 80px;
+    margin: 80px 80px;
 }
 .consec .ic{
     font-size: 30px;
@@ -656,7 +656,7 @@ footer .bottom__footer{
 .consec .socia{
     position: absolute;
     right: 450px;
-    top: 120px;
+    top: 170px;
 }
 .consec .socia .ic{
     margin-left: 25px;

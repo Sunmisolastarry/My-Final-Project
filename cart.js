@@ -23,6 +23,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
         // Clear the content in the cart area
         cartElement.innerHTML = "Cart is empty.";
+        const totalPriceSpan = document.querySelector('.totalprice');
+        totalPriceSpan.textContent = "$0.00";
     });
 });
 

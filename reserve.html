@@ -37,13 +37,13 @@
    <form action="#" method="get" onsubmit="sendMessage">
     <h1>Make Reservation</h1>
     
-    <input class="name" id="name" type="text" placeholder="name" onkeyup="setMessageLink()"><br>
+    <input class="name" id="name" type="text" placeholder="name" onkeyup="setMessageLink() clearNameError()" ><br>
     <span id="nameErrorMessage"></span><br>
     
-    <input class="twin" type="tel" id="phone" placeholder="phone-number" name="phone" onkeyup="setMessageLink()"> <br>
+    <input class="twin" type="tel" id="phone" placeholder="phone-number" name="phone" onkeyup="setMessageLink() clearPhoneError()"> <br>
     <span id="phoneErrorMessage"></span><br>
     
-    <input class="twin twins" type="email" name="email" placeholder="e-mail" id="email" onkeyup="setMessageLink()"><br>
+    <input class="twin twins" type="email" name="email" placeholder="e-mail" id="email" onkeyup="setMessageLink() clearEmailError()"><br>
     <span id="emailErrorMessage"></span><br>
     
     <div class="dandt">

@@ -78,7 +78,7 @@ if (inpTag.value === "") {
     alert("pick a time")
     // document.getElementById('timeErrorMessage').innerHTML = "pick a time"
   } else {
-    // button.innerHTML = "Submited";
+    button.innerHTML = "Submited";
     // resultTag.innerHTML = `You are welcome ${inpTag.value}, Thank you for Choosing to Dine with us`;
     // takeEmail.innerHTML = `You will be sent a confirmation message to ${inpTag3.value}`;
     // takenumber.innerHTML = `Would you like to be sent notifications on this Number ${inpTag3.value} Yes or No?`;
@@ -90,18 +90,22 @@ function clearNameError() {
   document.getElementById('nameErrorMessage').innerHTML = "";
 }
 
-function clearEmailError() {
-  document.getElementById('emailErrorMessage').innerHTML = "";
-}
-
 function clearPhoneError() {
   document.getElementById('phoneErrorMessage').innerHTML = "";
 }
 
-function clearPasswordError() {
-  document.getElementById('passwordErrorMessage').innerHTML = "";
+function clearEmailError() {
+  document.getElementById('emailErrorMessage').innerHTML = "";
 }
 
-function clearPasswordTwoError() {
-  document.getElementById('passErrorMessage').innerHTML = "";
-}
+// function clearDateError() {
+//   document.getElementById('dateErrorMessage').innerHTML = "";
+// }
+
+// function clearTimeError() {
+//   document.getElementById('timeErrorMessage').innerHTML = "";
+// }
+
+// function clearPersonError() {
+//   document.getElementById('timeErrorMessage').innerHTML = "";
+// }
