@@ -186,13 +186,13 @@ document.addEventListener("DOMContentLoaded", function() {
 
     checkoutButton.addEventListener('click', function() {
         // Retrieve all selected products
-        const products = document.querySelectorAll('.cart-item common');
+        const products = document.querySelectorAll('.cart-item .common');
         let message = "Selected Products:\n";
 
         // Iterate over each product and retrieve details
         products.forEach(function(product, index) {
-            const productName = product.getElementById('p').textContent;
-            const productPrice = product.getElementById('b').textContent;
+            const productName = product.querySelector('.productname').textContent;
+            const productPrice = product.querySelector('.productprice').textContent;
 
             // Append product details to the message
             message += `${index + 1}. ${productName}: ${productPrice}\n`;
