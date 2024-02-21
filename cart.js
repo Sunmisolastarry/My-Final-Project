@@ -208,7 +208,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const encodedMessage = encodeURIComponent(message);
 
         // Create the WhatsApp share URL
-        const whatsappURL = `https://wa.me/+2348105571552?text=${encodedMessage}`;
+        const whatsappURL = `https://wa.me/+2347018529878?text=${encodedMessage}`;
 
         // Open WhatsApp with the message content
         window.open(whatsappURL, '_blank');
