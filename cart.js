@@ -184,14 +184,15 @@ document.addEventListener("DOMContentLoaded", function() {
 document.addEventListener("DOMContentLoaded", function() {
     const checkoutButton = document.getElementById('checkout-btn');
 
-    checkoutButton.addEventListener('click', function() {
+    checkoutButton.addEventListener('click', function(e) {
+        e.preventDefault();
         // Retrieve all selected products
-        const products = document.querySelectorAll('.cart-item .common');
+        const products = document.querySelectorAll('.cart-item');
         let message = "Selected Products:\n";
 
         // Iterate over each product and retrieve details
         products.forEach(function(product, index) {
-            const productName = product.querySelector('.productname').textContent;
+            const productName = product.querySelector('.cart-item .productname').textContent;
             const productPrice = product.querySelector('.productprice').textContent;
 
             // Append product details to the message
@@ -201,10 +202,10 @@ document.addEventListener("DOMContentLoaded", function() {
         // Retrieve total price
         const totalPrice = document.querySelector('.totalprice').textContent;
 
-        // Append total price to the message
+        // // Append total price to the message
         message += `\nTotal Price: ${totalPrice}`;
 
-        // Encode message for WhatsApp URL
+        // // Encode message for WhatsApp URL
         const encodedMessage = encodeURIComponent(message);
 
         // Create the WhatsApp share URL
