@@ -49,3 +49,15 @@ document.addEventListener("DOMContentLoaded", function() {
         localStorage.setItem('cartCounter', cartCounter);
     }
 });
+
+var first = document.querySelector('.menuic')
+const second = document.querySelector('.left__listing')
+
+// first.onclick=function(){
+//     second.style.left = 780
+// }
+
+first.addEventListener("click", function() {
+    // console.log("I have been clicked")
+    second.classList.toggle("list-toggle")
+})

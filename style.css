@@ -75,11 +75,7 @@ nav{
     margin-top: 25px;
 }
 
-.menu{
-    display: none;
-}
-
-.close{
+.menuic{
     display: none;
 }
 
@@ -193,112 +189,6 @@ nav{
     bottom: 0;
     left: 0;
     padding: 10px 0;
-}
-
-
-@media (max-width: 600px) {
-    nav {
-        padding: 8px 15px;
-    }
-
-    .left__listing{
-        display: block;
-        position: absolute;
-        background: teal;
-        width: 50%;
-        left: -300px;
-        top: 50px;
-        padding: 30px 0;
-        transition: .5s;
-    }
-
-    .left__listing ul{
-        display: block;
-    }
-    
-    .left__listing ul li{
-        background: transparent;
-        padding-left: 30px;
-    }
-
-    .left__listing .btns{
-        padding-left: 30px;
-        padding-top: 20px;
-    }
-    
-    .menu{
-        display: flex;
-        font-size: 30px;
-        cursor: pointer;
-    }
-    
-    .close{
-        display: flex;
-        position: absolute;
-        top: 5px;
-        right: 5px;
-        font-size: 25px;
-    }
-
-    footer {
-        padding: 30px;
-    }
-
-    .top_footer .top1 {
-        flex-wrap: wrap;
-    }
-
-    .top1 .details{
-        width: 100%;
-        margin-bottom: 20px;
-    }
-
-    .top1 .details img{
-        scale: .6;
-        line-height: 5px;
-    }
-    
-    .top1 .details p,
-    ul li {
-        font-size: 12px;
-    }
-
-    .top_footer .top1 .common{
-        width: 45%;
-        margin-bottom: 20px;
-    }
-
-    .top2{
-        display: block;
-    }
-
-    .top2 form {
-        display: block;
-        margin-bottom: 12px;
-    }
-    
-    .top2 form button {
-        margin-top: 10px;
-        width: 100%;
-    }
-
-    .top2 p {
-        font-size: 12px;
-    }
-
-    .top2 .top2__right {
-        display: block;
-        margin-top: 20px;
-    }
-
-    .top2__right .contact{
-        margin-top: 20px;
-    }
-    
-    .heroe h1 {
-        text-align: center;
-    }
-    
 }
 
 .re{
@@ -661,4 +551,110 @@ footer .bottom__footer{
 .consec .socia .ic{
     margin-left: 25px;
     font-size: 50px;
+}
+
+
+@media (max-width: 600px) {
+    nav {
+        display: flex;
+        justify-content: space-between;
+        box-shadow: 3px 3px 5px rgba(78, 77, 77, 0.3);
+        background: #212121;
+        padding: 10px 30px;
+        width: 305%;
+    }
+
+    .left__listing{
+        display: block;
+        position: absolute;
+        background: teal;
+        width: 30%;
+        left: 888px;
+        top: 85px;
+        padding: 30px 0;
+        transition: .5s;
+        font-size: 3.5rem;
+    }
+
+    .left__listing ul{
+        display: block;
+    }
+    
+    .left__listing ul li{
+        background: transparent;
+    }
+
+    .left__listing .btns{
+        padding-left: 30px;
+        padding-top: 20px;
+    }
+    
+    .menuic{
+        display: flex;
+        font-size: 50px;
+        cursor: pointer;
+    }
+    .icon-cart{
+        color: white;
+        position: absolute;
+        top: 3px;
+        right: 28px;
+        font-size: 60px;
+    }
+    #cart-counter{
+        position: absolute;
+        top: 25px;
+        right: 12px;
+        font-size: 2rem;
+        text-decoration: none; 
+        color: white; 
+    }
+    .list-toggle {
+        left: -600px;
+    }
+    .Order{
+        width: 300px;
+        height: 50px;
+        margin-left: 300px;
+        margin-top: -180px;
+        border-radius: 10px;
+        background-color: teal;
+        border: none;
+        font-size: rem;
+    }
+    .carousel{
+        width: 1350px;
+        margin-left: -90px;
+    }
+    .carousel-inner{
+        /* width: 1000px; */
+    }
+    .carousel-item{
+        
+    }
+    .project{
+        width: 310%;
+        margin-top: 35px;
+        margin-left: -20px;
+    }
+    .project h2{
+        text-align: center;
+        font-weight: bold;
+        font-size: 3.5rem;
+        color: white;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        margin-top: -19px;
+    }
+
+    footer{
+        margin-top: 50px;
+        width: 305%;
+        background: #212121;
+        color: white;
+    }
+    .back{
+        position: absolute;
+        right: -740px;
+        bottom: -865px;
+    }
 }
